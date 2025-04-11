@@ -1,0 +1,37 @@
+
+
+ ---------------------django_initializer.py-----------------
+import sys, os, django
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, BASE_DIR)
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Main.settings")
+django.setup()
+-----------------------------------------------------------
+>>> pip install  django-extensions
+>>> pip install jupyter django-extensions  # if you nead more libreary install like sklearn or flask and more ...
+-----------------------settings.py ------------------------------------
+INSTALLED_APPS += ['django_extensions']
+-----------------------------Jupyter .ipynb --------------------------------------------
+1)------
+
+import django_initializer
+from django.contrib.auth.models import User
+2)------
+import os
+os.environ["DJANGO_ALLOW_ASYNC_UNSAFE"] = "true"
+3)------
+
+print(User.objects.all()[0])
+
+
+
+=====================proplem and code ====================
+#https://blog.theodo.com/2020/11/django-jupyter-vscode-setup/
+#https://gist.github.com/EtsuNDmA/dd8949061783bf593706559374c8f635 
+
+
+
+==================solve proplem=====================================
+RuntimeError: populate() isn't reentrant  ??
+#https://stackoverflow.com/questions/27093746/django-stops-working-with-runtimeerror-populate-isnt-reentrant/55929118#55929118
+raise RuntimeError("populate() isn't reentrant")    solution==>  self.app_configs = {}

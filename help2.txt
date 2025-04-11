@@ -1,0 +1,3 @@
+
+python manage.py migrate 0001_initial                                            #<----------------------
+rm db.sqlite3                                                                    #<----------------------
