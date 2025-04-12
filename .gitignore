@@ -1,3 +1,10 @@
+#------youusef---------
+help.txt
+help2.txt
+go.bat
+openproject.bat
+runserver.bat
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
