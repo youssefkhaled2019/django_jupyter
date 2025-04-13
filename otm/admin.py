@@ -1,6 +1,5 @@
 from django.contrib import admin
 
-# Register your models here.
 from otm.models import Reporter,Article
 # Register your models here.
 
@@ -13,7 +12,6 @@ class Reporter_Admin(admin.ModelAdmin):
 class Article_Admin(admin.ModelAdmin):
         all_fields = [f.name for f in Article._meta.fields]                #SHOW ALL FILDES
         list_display=all_fields
- 
-                   
+        
 admin.site.register(Reporter,Reporter_Admin)
 admin.site.register(Article,Article_Admin)

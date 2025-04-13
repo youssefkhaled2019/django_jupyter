@@ -1,4 +1,22 @@
 
+# -https://docs.djangoproject.com/en/5.0/topics/db/examples/
+   # - https://docs.djangoproject.com/en/5.0/topics/db/examples/one_to_one/            oto       #finish
+   # - https://docs.djangoproject.com/en/5.0/topics/db/examples/many_to_one/            otm      #finish
+   # - https://docs.djangoproject.com/en/5.0/topics/db/examples/many_to_many/           mtm      #finish
+
+# https://docs.djangoproject.com/en/5.0/topics/db/models/
+# Models : https://docs.djangoproject.com/en/5.0/ref/models/
+# Making queries : https://docs.djangoproject.com/en/5.0/topics/db/queries/#lookups-that-span-relationships
+# Model field reference : https://docs.djangoproject.com/en/4.1/ref/models/fields/#django.db.models.CASCADE
+
+
+
+
+
+
+
+
+
 python manage.py migrate 0001_initial                                            #<----------------------
 rm db.sqlite3                                                                    #<----------------------
 
