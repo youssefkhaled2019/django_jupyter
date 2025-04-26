@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'oto',
     'otm',
     'mtm',
+    'test_bank_systems',
 'django_extensions',
 ]
 
